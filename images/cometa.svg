@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" role="img" aria-label="Gomitas Cometa">
+  <defs>
+    <radialGradient id="bg4" cx="50%" cy="35%" r="75%">
+      <stop offset="0%" stop-color="#17173d"/>
+      <stop offset="40%" stop-color="#1a1435"/>
+      <stop offset="100%" stop-color="#090d1e"/>
+    </radialGradient>
+    <linearGradient id="tail" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#fff5b8"/>
+      <stop offset="32%" stop-color="#ffbc7b"/>
+      <stop offset="70%" stop-color="#ff6e93"/>
+      <stop offset="100%" stop-color="#ff4fc7"/>
+    </linearGradient>
+    <filter id="shadow3" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#100d1d" flood-opacity="0.55"/>
+    </filter>
+  </defs>
+  <rect width="400" height="260" fill="url(#bg4)"/>
+  <g fill="#fff" opacity="0.9">
+    <circle cx="62" cy="50" r="2.4"/>
+    <circle cx="120" cy="76" r="2.1"/>
+    <circle cx="332" cy="62" r="2.7"/>
+    <circle cx="340" cy="170" r="2.2"/>
+  </g>
+
+  <g filter="url(#shadow3)">
+    <path d="M28 134C92 90 158 72 232 78C210 100 194 132 170 152C135 178 84 184 28 134Z" fill="url(#tail)" opacity="0.9"/>
+    <path d="M35 152C90 120 144 112 216 118C179 139 154 166 131 182C103 201 63 199 35 152Z" fill="url(#tail)" opacity="0.65"/>
+    <path d="M240 72C277 63 310 67 336 84C294 97 270 117 251 140C231 163 212 175 190 181C190 149 200 102 240 72Z" fill="url(#tail)" opacity="0.42"/>
+
+    <g transform="translate(186 40) rotate(18 52 74)">
+      <path d="M38 88C25 68 25 34 45 22C67 10 98 18 112 42C125 64 116 95 92 109C69 122 49 114 38 88Z" fill="#ffd864"/>
+      <path d="M52 32C69 22 87 24 97 40" stroke="#fff4c3" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <circle cx="62" cy="62" r="7" fill="#fffaf0" opacity="0.9"/>
+      <circle cx="83" cy="72" r="5.5" fill="#fffaf0" opacity="0.8"/>
+    </g>
+  </g>
+
+  <g font-family="Verdana, Arial, sans-serif" font-weight="700" fill="#ffffff" text-anchor="middle">
+    <text x="200" y="224" font-size="25">GOMITAS COMETA</text>
+  </g>
+</svg>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" role="img" aria-label="Gomitas Planetarias">
+  <defs>
+    <radialGradient id="bg3" cx="50%" cy="35%" r="75%">
+      <stop offset="0%" stop-color="#121a3f"/>
+      <stop offset="45%" stop-color="#1b2350"/>
+      <stop offset="100%" stop-color="#080d1d"/>
+    </radialGradient>
+    <radialGradient id="p1" cx="32%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ffe7ff"/>
+      <stop offset="30%" stop-color="#ffb5ef"/>
+      <stop offset="100%" stop-color="#ff74ca"/>
+    </radialGradient>
+    <radialGradient id="p2" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ebffff"/>
+      <stop offset="40%" stop-color="#7fe1ff"/>
+      <stop offset="100%" stop-color="#4a85ff"/>
+    </radialGradient>
+    <radialGradient id="p3" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#f0ffe2"/>
+      <stop offset="35%" stop-color="#98f7b6"/>
+      <stop offset="100%" stop-color="#1acb81"/>
+    </radialGradient>
+    <filter id="planetShadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#060b15" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+  <rect width="400" height="260" fill="url(#bg3)"/>
+
+  <g stroke="#ffffff" opacity="0.28" fill="none">
+    <ellipse cx="202" cy="132" rx="150" ry="70"/>
+    <ellipse cx="202" cy="132" rx="118" ry="52"/>
+  </g>
+
+  <g fill="#fff" opacity="0.9">
+    <circle cx="88" cy="50" r="2.5"/>
+    <circle cx="318" cy="76" r="2.8"/>
+    <circle cx="336" cy="144" r="2.2"/>
+    <circle cx="72" cy="176" r="2.2"/>
+  </g>
+
+  <g filter="url(#planetShadow)">
+    <circle cx="118" cy="132" r="38" fill="url(#p1)"/>
+    <circle cx="195" cy="96" r="28" fill="url(#p2)"/>
+    <circle cx="260" cy="138" r="42" fill="url(#p3)"/>
+    <circle cx="282" cy="70" r="12" fill="#ffd96a"/>
+  </g>
+
+  <g opacity="0.5" stroke="#e6f5ff" stroke-width="2" fill="none">
+    <path d="M120 45C140 64 152 83 153 109"/>
+    <path d="M212 68C236 83 249 102 252 127"/>
+    <path d="M254 97C266 110 270 122 272 138"/>
+  </g>
+
+  <g font-family="Verdana, Arial, sans-serif" font-weight="700" fill="#ffffff" text-anchor="middle">
+    <text x="200" y="224" font-size="24">GOMITAS PLANETARIAS</text>
+  </g>
+</svg>

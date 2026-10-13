@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Menú | Gomitas Galácticas</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
+    <header class="site-header">
+      <div class="container header-content">
+        <a href="index.html" class="brand">
+          <img src="images/logo .png" alt="Gomitas Galácticas logo" class="brand-logo">
+          <span class="brand-text">Gomitas Galácticas</span>
+        </a>
+        <nav class="main-nav" aria-label="Navegación principal">
+          <a href="index.html">Portada</a>
+          <a class="active" href="menu.html" aria-current="page">Menú</a>
+          <a href="contactos.html">Contactos</a>
+        </nav>
+        <button id="cart-button" class="cart-button">Carrito (<span id="cart-count">0</span>)</button>
+        <aside id="cart" class="cart hidden" aria-label="Carrito de compras">
+          <h3>Tu carrito</h3>
+          <ul id="cart-items"></ul>
+          <label class="customer-field" for="customer-name">Nombre del cliente
+            <input id="customer-name" type="text" placeholder="Escribe tu nombre" autocomplete="name" required>
+          </label>
+          <label class="customer-field" for="customer-id">Cédula de identidad
+            <input id="customer-id" type="text" placeholder="Escribe tu cédula" inputmode="numeric" autocomplete="off" required>
+          </label>
+          <div class="cart-actions">
+            <strong>Total: Bs.<span id="cart-total">0.00</span></strong>
+            <div class="cart-buttons">
+              <button id="finalize-order">Finalizar pedido</button>
+              <button id="clear-cart">Vaciar</button>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </header>
+    <main class="container">
+      <section class="page-heading">
+        <span class="eyebrow">Elige tu próximo viaje</span>
+        <h1>Menú</h1>
+        <p>Descubre nuestra colección de sabores y formas galácticas.</p>
+      </section>
+      <section aria-labelledby="catalogo-titulo">
+        <h2 id="catalogo-titulo" class="section-title">Catálogo</h2>
+        <div id="products" class="grid"></div>
+      </section>
+    </main>
+    <footer class="site-footer"><div class="container">&copy; 2026 Gomitas Galácticas</div></footer>
+    <script src="js/background.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
